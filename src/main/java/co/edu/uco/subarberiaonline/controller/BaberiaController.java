@@ -20,7 +20,7 @@ public class BaberiaController {
         return barberiaService.findById(id);
     }
 
-    @GetMapping("/{nit}/barberia")
+    @GetMapping("/{nit}/barberian")
     public Barberia findByNit(@PathVariable(value = "nit", required = true) String nit){
         return barberiaService.findByNit(nit);
     }

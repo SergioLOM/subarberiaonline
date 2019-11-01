@@ -20,7 +20,7 @@ public class UsuarioController {
         return usuarioService.findById(id);
     }
 
-    @GetMapping("/{nroDocumento}/usuario")
+    @GetMapping("/{nroDocumento}/usuariod")
     public Usuario findByNroDocumento(@PathVariable(value = "nroDocumento", required = true) String nroDocumento){
         return usuarioService.findByNroDocumento(nroDocumento);
     }
